@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		D66F6A1E28364B1F0042E3D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F6A1D28364B1F0042E3D5 /* AppDelegate.swift */; };
 		D66F6A2028364B1F0042E3D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F6A1F28364B1F0042E3D5 /* SceneDelegate.swift */; };
-		D66F6A2228364B1F0042E3D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F6A2128364B1F0042E3D5 /* ViewController.swift */; };
+		D66F6A2228364B1F0042E3D5 /* PhotoListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F6A2128364B1F0042E3D5 /* PhotoListTableVC.swift */; };
 		D66F6A2528364B1F0042E3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66F6A2328364B1F0042E3D5 /* Main.storyboard */; };
 		D66F6A2728364B210042E3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66F6A2628364B210042E3D5 /* Assets.xcassets */; };
 		D66F6A2A28364B210042E3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66F6A2828364B210042E3D5 /* LaunchScreen.storyboard */; };
+		D686808628366A76002358F9 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686808428366A76002358F9 /* PhotoCell.swift */; };
+		D686808728366A76002358F9 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D686808528366A76002358F9 /* PhotoCell.xib */; };
+		D686808928366C14002358F9 /* UITableView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686808828366C14002358F9 /* UITableView+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D66F6A1A28364B1F0042E3D5 /* FlickyPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickyPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66F6A1D28364B1F0042E3D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66F6A1F28364B1F0042E3D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D66F6A2128364B1F0042E3D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D66F6A2128364B1F0042E3D5 /* PhotoListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListTableVC.swift; sourceTree = "<group>"; };
 		D66F6A2428364B1F0042E3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D66F6A2628364B210042E3D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D66F6A2928364B210042E3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D66F6A2B28364B210042E3D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D686808428366A76002358F9 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		D686808528366A76002358F9 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		D686808828366C14002358F9 /* UITableView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				D66F6A1D28364B1F0042E3D5 /* AppDelegate.swift */,
 				D66F6A1F28364B1F0042E3D5 /* SceneDelegate.swift */,
-				D66F6A2128364B1F0042E3D5 /* ViewController.swift */,
+				D66F6A2128364B1F0042E3D5 /* PhotoListTableVC.swift */,
 				D66F6A2328364B1F0042E3D5 /* Main.storyboard */,
 				D66F6A2628364B210042E3D5 /* Assets.xcassets */,
 				D66F6A2828364B210042E3D5 /* LaunchScreen.storyboard */,
 				D66F6A2B28364B210042E3D5 /* Info.plist */,
+				D686808428366A76002358F9 /* PhotoCell.swift */,
+				D686808528366A76002358F9 /* PhotoCell.xib */,
+				D686808828366C14002358F9 /* UITableView+ext.swift */,
 			);
 			path = FlickyPhotos;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D686808728366A76002358F9 /* PhotoCell.xib in Resources */,
 				D66F6A2A28364B210042E3D5 /* LaunchScreen.storyboard in Resources */,
 				D66F6A2728364B210042E3D5 /* Assets.xcassets in Resources */,
 				D66F6A2528364B1F0042E3D5 /* Main.storyboard in Resources */,
@@ -138,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D66F6A2228364B1F0042E3D5 /* ViewController.swift in Sources */,
+				D686808628366A76002358F9 /* PhotoCell.swift in Sources */,
+				D66F6A2228364B1F0042E3D5 /* PhotoListTableVC.swift in Sources */,
 				D66F6A1E28364B1F0042E3D5 /* AppDelegate.swift in Sources */,
 				D66F6A2028364B1F0042E3D5 /* SceneDelegate.swift in Sources */,
+				D686808928366C14002358F9 /* UITableView+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
