@@ -28,6 +28,10 @@ class PhotoListTableVC: UIViewController {
                 self.updateTableView(with: photo)
             case .failure(let error):
                 print(error.localizedDescription)
+                DispatchQueue.main.async {
+                    self.errorAlertMessage(with: error.rawValue)
+
+                }
             }
         }
     }
@@ -38,6 +42,12 @@ class PhotoListTableVC: UIViewController {
             self.tableView.reloadData()
         }
        
+    }
+    
+    func errorAlertMessage(with message:String){
+        let alert = UIAlertController(title: "Somthing Wrong", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alert, animated: true,completion: nil)
     }
 
 }

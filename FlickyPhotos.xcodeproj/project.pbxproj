@@ -19,6 +19,7 @@
 		D686808B28367C51002358F9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686808A28367C51002358F9 /* NetworkManager.swift */; };
 		D686809528369161002358F9 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686809428369161002358F9 /* Photo.swift */; };
 		D686809728369696002358F9 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686809628369696002358F9 /* PhotosModel.swift */; };
+		D68D7A042837D04100012378 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D7A032837D04100012378 /* ErrorMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D686808A28367C51002358F9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D686809428369161002358F9 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		D686809628369696002358F9 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		D68D7A032837D04100012378 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		D66F6A1C28364B1F0042E3D5 /* FlickyPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				D68D7A022837D00A00012378 /* Utilities */,
 				D686808C28367CA2002358F9 /* support */,
 				D686809028367CE4002358F9 /* Extensions */,
 				D686808E28367CC7002358F9 /* Managers */,
@@ -149,6 +152,14 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		D68D7A022837D00A00012378 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D68D7A032837D04100012378 /* ErrorMessages.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +237,7 @@
 				D686809728369696002358F9 /* PhotosModel.swift in Sources */,
 				D686809528369161002358F9 /* Photo.swift in Sources */,
 				D66F6A2228364B1F0042E3D5 /* PhotoListTableVC.swift in Sources */,
+				D68D7A042837D04100012378 /* ErrorMessages.swift in Sources */,
 				D66F6A1E28364B1F0042E3D5 /* AppDelegate.swift in Sources */,
 				D66F6A2028364B1F0042E3D5 /* SceneDelegate.swift in Sources */,
 				D686808928366C14002358F9 /* UITableView+ext.swift in Sources */,

@@ -24,13 +24,22 @@ class NetworkManager {
     }
     
     
-    public func getPhotos(completion:@escaping(Result<[Photo],Error>)->Void){
+    public func getPhotos(completion:@escaping(Result<[Photo],FLICKError>)->Void){
         
         createRequest(url:URL(string: basUrl+"page=1&per_page=20"+apiKey)) { request in
             
-            let task = URLSession.shared.dataTask(with: request) { data, _ , erorr in
-                guard let data = data , erorr == nil else{
-                    print("error")
+            let task = URLSession.shared.dataTask(with: request) { data, response , error in
+                if let _ = error {
+                    completion(.failure(.unableToComplete))
+                    return
+                }
+                guard let response = response as? HTTPURLResponse , response.statusCode == 200 else {
+                    completion(.failure(.invalidResponse))
+                    return
+                }
+                
+                guard let data = data else {
+                    completion(.failure(.invalidData))
                     return
                 }
                 do
@@ -38,7 +47,7 @@ class NetworkManager {
                     let result = try JSONDecoder().decode(PhotosModel.self, from: data)
                     completion(.success(result.photos.photo))
                 }catch{
-                    print("error")
+                    completion(.failure(.invalidData))
                 }
                 
             }
