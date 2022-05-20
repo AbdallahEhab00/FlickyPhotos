@@ -70,8 +70,8 @@
 		D66F6A1C28364B1F0042E3D5 /* FlickyPhotos */ = {
 			isa = PBXGroup;
 			children = (
-				D68D7A022837D00A00012378 /* Utilities */,
 				D686808C28367CA2002358F9 /* support */,
+				D68D7A022837D00A00012378 /* Utilities */,
 				D686809028367CE4002358F9 /* Extensions */,
 				D686808E28367CC7002358F9 /* Managers */,
 				D686808D28367CBA002358F9 /* Model */,

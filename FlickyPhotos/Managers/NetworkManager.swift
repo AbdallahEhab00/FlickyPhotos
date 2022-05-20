@@ -24,9 +24,9 @@ class NetworkManager {
     }
     
     
-    public func getPhotos(completion:@escaping(Result<[Photo],FLICKError>)->Void){
+    public func getPhotos(page:Int ,completion:@escaping(Result<[Photo],FLICKError>)->Void){
         
-        createRequest(url:URL(string: basUrl+"page=1&per_page=20"+apiKey)) { request in
+        createRequest(url:URL(string: basUrl+"page=\(page)&per_page=20"+apiKey)) { request in
             
             let task = URLSession.shared.dataTask(with: request) { data, response , error in
                 if let _ = error {
