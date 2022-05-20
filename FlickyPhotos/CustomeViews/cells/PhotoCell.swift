@@ -11,8 +11,16 @@ class PhotoCell: UITableViewCell {
 
     @IBOutlet weak var flickerImage: UIImageView!
     
+    let cache  = NSCache<NSString,UIImage>()
+
     
     func getImageFromUrl(for urlString:String){
+        
+        let cacheKey = NSString(string: urlString)
+        if let image = cache.object(forKey:cacheKey)  {
+            self.flickerImage.image = image
+            return
+        }
         guard let imageUrl = URL(string: urlString) else { return}
 
         let task = URLSession.shared.dataTask(with: imageUrl) { [weak self] data, response, error in
@@ -23,9 +31,10 @@ class PhotoCell: UITableViewCell {
             guard let data = data else { return }
             guard let image = UIImage(data: data) else {return}
     
-            DispatchQueue.main.async {  self.flickerImage.image = image }
+            self.cache.setObject(image , forKey: cacheKey)
+            DispatchQueue.main.async { self.flickerImage.image = image}
+            
         }
-       
         task.resume()
     }
 
