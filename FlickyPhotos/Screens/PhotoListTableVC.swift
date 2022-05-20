@@ -17,6 +17,7 @@ class PhotoListTableVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerNib(cell: PhotoCell.self)
+        tableView.registerNib(cell: AdCell.self)
         getFlickerPhotos(page: page)
     }
    
@@ -62,9 +63,17 @@ extension PhotoListTableVC: UITableViewDelegate,UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeue() as PhotoCell
-        cell.getImageFromUrl(for: configureImageData(indexPath: indexPath) )
-        return cell
+        
+        
+        if (indexPath.row % 6 == 0) {
+            let cell = tableView.dequeue() as AdCell
+            return cell
+        } else {
+            let cell = tableView.dequeue() as PhotoCell
+            cell.getImageFromUrl(for: configureImageData(indexPath: indexPath) )
+            return cell
+            
+        }
     }
     
     

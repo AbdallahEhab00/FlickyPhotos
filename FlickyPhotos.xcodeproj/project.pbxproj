@@ -20,6 +20,8 @@
 		D686809528369161002358F9 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686809428369161002358F9 /* Photo.swift */; };
 		D686809728369696002358F9 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686809628369696002358F9 /* PhotosModel.swift */; };
 		D68D7A042837D04100012378 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D7A032837D04100012378 /* ErrorMessages.swift */; };
+		D68D7A09283813C200012378 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D7A07283813C200012378 /* AdCell.swift */; };
+		D68D7A0A283813C200012378 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68D7A08283813C200012378 /* AdCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		D686809428369161002358F9 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		D686809628369696002358F9 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
 		D68D7A032837D04100012378 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		D68D7A07283813C200012378 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		D68D7A08283813C200012378 /* AdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			children = (
 				D686808428366A76002358F9 /* PhotoCell.swift */,
 				D686808528366A76002358F9 /* PhotoCell.xib */,
+				D68D7A07283813C200012378 /* AdCell.swift */,
+				D68D7A08283813C200012378 /* AdCell.xib */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D686808728366A76002358F9 /* PhotoCell.xib in Resources */,
+				D68D7A0A283813C200012378 /* AdCell.xib in Resources */,
 				D66F6A2A28364B210042E3D5 /* LaunchScreen.storyboard in Resources */,
 				D66F6A2728364B210042E3D5 /* Assets.xcassets in Resources */,
 				D66F6A2528364B1F0042E3D5 /* Main.storyboard in Resources */,
@@ -233,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D686808B28367C51002358F9 /* NetworkManager.swift in Sources */,
+				D68D7A09283813C200012378 /* AdCell.swift in Sources */,
 				D686808628366A76002358F9 /* PhotoCell.swift in Sources */,
 				D686809728369696002358F9 /* PhotosModel.swift in Sources */,
 				D686809528369161002358F9 /* Photo.swift in Sources */,
