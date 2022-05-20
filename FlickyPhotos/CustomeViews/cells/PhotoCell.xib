@@ -28,6 +28,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="flickerImage" destination="Zee-F6-5Ag" id="Jmy-7d-rXl"/>
+            </connections>
             <point key="canvasLocation" x="219.56521739130437" y="22.098214285714285"/>
         </tableViewCell>
     </objects>
