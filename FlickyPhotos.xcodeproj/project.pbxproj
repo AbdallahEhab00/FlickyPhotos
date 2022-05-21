@@ -25,7 +25,19 @@
 		D68D7A09283813C200012378 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D7A07283813C200012378 /* AdCell.swift */; };
 		D68D7A0A283813C200012378 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68D7A08283813C200012378 /* AdCell.xib */; };
 		D6A4A51E2838F42900ADE023 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4A51D2838F42900ADE023 /* AdViewController.swift */; };
+		D6A4A526283900CC00ADE023 /* FlickyPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4A525283900CC00ADE023 /* FlickyPhotosTests.swift */; };
+		D6A4A52D2839013C00ADE023 /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4A52C2839013C00ADE023 /* NetworkManagerTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6A4A527283900CC00ADE023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D66F6A1228364B1F0042E3D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D66F6A1928364B1F0042E3D5;
+			remoteInfo = FlickyPhotos;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		007641C4E3F40B5B2A25CEE4 /* Pods-FlickyPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickyPhotos.release.xcconfig"; path = "Target Support Files/Pods-FlickyPhotos/Pods-FlickyPhotos.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +61,9 @@
 		D68D7A07283813C200012378 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
 		D68D7A08283813C200012378 /* AdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
 		D6A4A51D2838F42900ADE023 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		D6A4A523283900CC00ADE023 /* FlickyPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickyPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A4A525283900CC00ADE023 /* FlickyPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickyPhotosTests.swift; sourceTree = "<group>"; };
+		D6A4A52C2839013C00ADE023 /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
 		F49CE3B9AB614734F5B06EF9 /* Pods-FlickyPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickyPhotos.debug.xcconfig"; path = "Target Support Files/Pods-FlickyPhotos/Pods-FlickyPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +73,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F1B73B08A7FA0C91FDEEAE0 /* Pods_FlickyPhotos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A4A520283900CC00ADE023 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D66F6A1C28364B1F0042E3D5 /* FlickyPhotos */,
+				D6A4A524283900CC00ADE023 /* FlickyPhotosTests */,
 				D66F6A1B28364B1F0042E3D5 /* Products */,
 				7DFC3F295A4186F577C61D55 /* Pods */,
 				65B6D72A138F04D3E9CAD08A /* Frameworks */,
@@ -95,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D66F6A1A28364B1F0042E3D5 /* FlickyPhotos.app */,
+				D6A4A523283900CC00ADE023 /* FlickyPhotosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +220,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		D6A4A524283900CC00ADE023 /* FlickyPhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6A4A52C2839013C00ADE023 /* NetworkManagerTest.swift */,
+				D6A4A525283900CC00ADE023 /* FlickyPhotosTests.swift */,
+			);
+			path = FlickyPhotosTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,6 +251,24 @@
 			productReference = D66F6A1A28364B1F0042E3D5 /* FlickyPhotos.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D6A4A522283900CC00ADE023 /* FlickyPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6A4A52B283900CC00ADE023 /* Build configuration list for PBXNativeTarget "FlickyPhotosTests" */;
+			buildPhases = (
+				D6A4A51F283900CC00ADE023 /* Sources */,
+				D6A4A520283900CC00ADE023 /* Frameworks */,
+				D6A4A521283900CC00ADE023 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6A4A528283900CC00ADE023 /* PBXTargetDependency */,
+			);
+			name = FlickyPhotosTests;
+			productName = FlickyPhotosTests;
+			productReference = D6A4A523283900CC00ADE023 /* FlickyPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,6 +281,10 @@
 				TargetAttributes = {
 					D66F6A1928364B1F0042E3D5 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					D6A4A522283900CC00ADE023 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D66F6A1928364B1F0042E3D5;
 					};
 				};
 			};
@@ -247,6 +302,7 @@
 			projectRoot = "";
 			targets = (
 				D66F6A1928364B1F0042E3D5 /* FlickyPhotos */,
+				D6A4A522283900CC00ADE023 /* FlickyPhotosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +317,13 @@
 				D66F6A2A28364B210042E3D5 /* LaunchScreen.storyboard in Resources */,
 				D66F6A2728364B210042E3D5 /* Assets.xcassets in Resources */,
 				D66F6A2528364B1F0042E3D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A4A521283900CC00ADE023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +391,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6A4A51F283900CC00ADE023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A4A52D2839013C00ADE023 /* NetworkManagerTest.swift in Sources */,
+				D6A4A526283900CC00ADE023 /* FlickyPhotosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6A4A528283900CC00ADE023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D66F6A1928364B1F0042E3D5 /* FlickyPhotos */;
+			targetProxy = D6A4A527283900CC00ADE023 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D66F6A2328364B1F0042E3D5 /* Main.storyboard */ = {
@@ -522,6 +602,40 @@
 			};
 			name = Release;
 		};
+		D6A4A529283900CC00ADE023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abdallah.FlickyPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickyPhotos.app/FlickyPhotos";
+			};
+			name = Debug;
+		};
+		D6A4A52A283900CC00ADE023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abdallah.FlickyPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickyPhotos.app/FlickyPhotos";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -539,6 +653,15 @@
 			buildConfigurations = (
 				D66F6A2F28364B210042E3D5 /* Debug */,
 				D66F6A3028364B210042E3D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6A4A52B283900CC00ADE023 /* Build configuration list for PBXNativeTarget "FlickyPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A4A529283900CC00ADE023 /* Debug */,
+				D6A4A52A283900CC00ADE023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
