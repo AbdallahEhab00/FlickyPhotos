@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F1B73B08A7FA0C91FDEEAE0 /* Pods_FlickyPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BEA746040A1DA34BEA0607 /* Pods_FlickyPhotos.framework */; };
+		D62B51352838B8CA009C0BAF /* PhotoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B51342838B8CA009C0BAF /* PhotoDetailsVC.swift */; };
 		D66F6A1E28364B1F0042E3D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F6A1D28364B1F0042E3D5 /* AppDelegate.swift */; };
 		D66F6A2028364B1F0042E3D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F6A1F28364B1F0042E3D5 /* SceneDelegate.swift */; };
 		D66F6A2228364B1F0042E3D5 /* PhotoListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F6A2128364B1F0042E3D5 /* PhotoListTableVC.swift */; };
@@ -22,9 +24,13 @@
 		D68D7A042837D04100012378 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D7A032837D04100012378 /* ErrorMessages.swift */; };
 		D68D7A09283813C200012378 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D7A07283813C200012378 /* AdCell.swift */; };
 		D68D7A0A283813C200012378 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68D7A08283813C200012378 /* AdCell.xib */; };
+		D6A4A51E2838F42900ADE023 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4A51D2838F42900ADE023 /* AdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		007641C4E3F40B5B2A25CEE4 /* Pods-FlickyPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickyPhotos.release.xcconfig"; path = "Target Support Files/Pods-FlickyPhotos/Pods-FlickyPhotos.release.xcconfig"; sourceTree = "<group>"; };
+		44BEA746040A1DA34BEA0607 /* Pods_FlickyPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickyPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62B51342838B8CA009C0BAF /* PhotoDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsVC.swift; sourceTree = "<group>"; };
 		D66F6A1A28364B1F0042E3D5 /* FlickyPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickyPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66F6A1D28364B1F0042E3D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66F6A1F28364B1F0042E3D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,8 @@
 		D68D7A032837D04100012378 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 		D68D7A07283813C200012378 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
 		D68D7A08283813C200012378 /* AdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
+		D6A4A51D2838F42900ADE023 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		F49CE3B9AB614734F5B06EF9 /* Pods-FlickyPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickyPhotos.debug.xcconfig"; path = "Target Support Files/Pods-FlickyPhotos/Pods-FlickyPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1B73B08A7FA0C91FDEEAE0 /* Pods_FlickyPhotos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65B6D72A138F04D3E9CAD08A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44BEA746040A1DA34BEA0607 /* Pods_FlickyPhotos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DFC3F295A4186F577C61D55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F49CE3B9AB614734F5B06EF9 /* Pods-FlickyPhotos.debug.xcconfig */,
+				007641C4E3F40B5B2A25CEE4 /* Pods-FlickyPhotos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D66F6A1128364B1F0042E3D5 = {
 			isa = PBXGroup;
 			children = (
 				D66F6A1C28364B1F0042E3D5 /* FlickyPhotos */,
 				D66F6A1B28364B1F0042E3D5 /* Products */,
+				7DFC3F295A4186F577C61D55 /* Pods */,
+				65B6D72A138F04D3E9CAD08A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				D66F6A2128364B1F0042E3D5 /* PhotoListTableVC.swift */,
+				D62B51342838B8CA009C0BAF /* PhotoDetailsVC.swift */,
+				D6A4A51D2838F42900ADE023 /* AdViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -173,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D66F6A2E28364B210042E3D5 /* Build configuration list for PBXNativeTarget "FlickyPhotos" */;
 			buildPhases = (
+				690A3CD715CD595D42C37E76 /* [CP] Check Pods Manifest.lock */,
 				D66F6A1628364B1F0042E3D5 /* Sources */,
 				D66F6A1728364B1F0042E3D5 /* Frameworks */,
 				D66F6A1828364B1F0042E3D5 /* Resources */,
+				36652D082C133BA3BA8E5E2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +266,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36652D082C133BA3BA8E5E2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickyPhotos/Pods-FlickyPhotos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlickyPhotos/Pods-FlickyPhotos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlickyPhotos/Pods-FlickyPhotos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		690A3CD715CD595D42C37E76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickyPhotos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D66F6A1628364B1F0042E3D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -244,9 +318,11 @@
 				D686808628366A76002358F9 /* PhotoCell.swift in Sources */,
 				D686809728369696002358F9 /* PhotosModel.swift in Sources */,
 				D686809528369161002358F9 /* Photo.swift in Sources */,
+				D62B51352838B8CA009C0BAF /* PhotoDetailsVC.swift in Sources */,
 				D66F6A2228364B1F0042E3D5 /* PhotoListTableVC.swift in Sources */,
 				D68D7A042837D04100012378 /* ErrorMessages.swift in Sources */,
 				D66F6A1E28364B1F0042E3D5 /* AppDelegate.swift in Sources */,
+				D6A4A51E2838F42900ADE023 /* AdViewController.swift in Sources */,
 				D66F6A2028364B1F0042E3D5 /* SceneDelegate.swift in Sources */,
 				D686808928366C14002358F9 /* UITableView+ext.swift in Sources */,
 			);
@@ -392,6 +468,7 @@
 		};
 		D66F6A2F28364B210042E3D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49CE3B9AB614734F5B06EF9 /* Pods-FlickyPhotos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,6 +496,7 @@
 		};
 		D66F6A3028364B210042E3D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 007641C4E3F40B5B2A25CEE4 /* Pods-FlickyPhotos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

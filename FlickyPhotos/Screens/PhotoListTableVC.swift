@@ -20,6 +20,12 @@ class PhotoListTableVC: UIViewController {
         tableView.registerNib(cell: AdCell.self)
         getFlickerPhotos(page: page)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = false
+
+    }
    
 
     private func getFlickerPhotos(page:Int){
@@ -98,6 +104,23 @@ extension PhotoListTableVC: UITableViewDelegate,UITableViewDataSource{
             getFlickerPhotos(page: page)
         }
             
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let PhotoDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "PhotoDetailsVC") as! PhotoDetailsVC
+        let AdViewController = self.storyboard?.instantiateViewController(withIdentifier: "AdViewController") as! AdViewController
+        if (indexPath.row % 6 == 0) {
+            navigationController?.pushViewController(AdViewController, animated: true)
+
+        } else {
+            
+            PhotoDetailsVC.imageUrl          = configureImageData(indexPath: indexPath)
+            PhotoDetailsVC.imageDescribtion  = pagination[indexPath.row].title
+            navigationController?.pushViewController(PhotoDetailsVC, animated: true)
+
+        }
+        
     }
     
 }
