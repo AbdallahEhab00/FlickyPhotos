@@ -29,8 +29,10 @@ class PhotoListTableVC: UIViewController {
    
 
     private func getFlickerPhotos(page:Int){
+        showLoadingView()
         NetworkManager.shared.getPhotos(page: page) { [weak self] result in
             guard let self = self else {return}
+            self.dismissLoadingView()
             switch result {
             case .success(let photo):
                 self.pagination.append(contentsOf: photo)

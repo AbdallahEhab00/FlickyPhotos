@@ -27,6 +27,7 @@
 		D6A4A51E2838F42900ADE023 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4A51D2838F42900ADE023 /* AdViewController.swift */; };
 		D6A4A526283900CC00ADE023 /* FlickyPhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4A525283900CC00ADE023 /* FlickyPhotosTests.swift */; };
 		D6A4A52D2839013C00ADE023 /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4A52C2839013C00ADE023 /* NetworkManagerTest.swift */; };
+		D6A4A52F28390AB900ADE023 /* UiViewController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A4A52E28390AB900ADE023 /* UiViewController+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		D6A4A523283900CC00ADE023 /* FlickyPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickyPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A4A525283900CC00ADE023 /* FlickyPhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickyPhotosTests.swift; sourceTree = "<group>"; };
 		D6A4A52C2839013C00ADE023 /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
+		D6A4A52E28390AB900ADE023 /* UiViewController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+ext.swift"; sourceTree = "<group>"; };
 		F49CE3B9AB614734F5B06EF9 /* Pods-FlickyPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickyPhotos.debug.xcconfig"; path = "Target Support Files/Pods-FlickyPhotos/Pods-FlickyPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D686808828366C14002358F9 /* UITableView+ext.swift */,
+				D6A4A52E28390AB900ADE023 /* UiViewController+ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				D686809528369161002358F9 /* Photo.swift in Sources */,
 				D62B51352838B8CA009C0BAF /* PhotoDetailsVC.swift in Sources */,
 				D66F6A2228364B1F0042E3D5 /* PhotoListTableVC.swift in Sources */,
+				D6A4A52F28390AB900ADE023 /* UiViewController+ext.swift in Sources */,
 				D68D7A042837D04100012378 /* ErrorMessages.swift in Sources */,
 				D66F6A1E28364B1F0042E3D5 /* AppDelegate.swift in Sources */,
 				D6A4A51E2838F42900ADE023 /* AdViewController.swift in Sources */,
